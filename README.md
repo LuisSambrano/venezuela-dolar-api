@@ -12,6 +12,7 @@ A "Unicorn-Tier" financial intelligence dashboard, rebuilt from scratch to verif
 ## ⚡ Features
 
 - **Deep Space Palette**: A semantic color system designed for high-contrast, premium dark modes.
+- **Live Financial Data**: Real-time exchange rates (Blue, MEP, CCL) fetched from public APIs.
 - **Solid Glass Physics**: Non-blur based glassmorphism (`backdrop-filter` free) for maximum performance on Retina displays.
 - **Spring Animation Topology**: All interactions driven by fluid spring physics (Stiffness: 300, Damping: 30).
 - **Tactile UI**: Components that "wake up" on hover (Magnetic Lift).

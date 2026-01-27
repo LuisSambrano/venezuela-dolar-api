@@ -3,57 +3,7 @@ import { motion, Variants } from "framer-motion";
 import { Currency } from "@/types/currency";
 import { CurrencyCard } from "@/components/molecules/CurrencyCard";
 import { GlassCard } from "@/components/ui/GlassCard";
-
-const MOCK_DATA: Currency[] = [
-  {
-    code: "blue",
-    name: "Blue",
-    buy: 1120,
-    sell: 1140,
-    variation: 0.45,
-    timestamp: new Date().toISOString(),
-  },
-  {
-    code: "oficial",
-    name: "Oficial",
-    buy: 840,
-    sell: 880,
-    variation: 0.12,
-    timestamp: new Date().toISOString(),
-  },
-  {
-    code: "mep",
-    name: "Bolsa (MEP)",
-    buy: 1050,
-    sell: 1055,
-    variation: -0.23,
-    timestamp: new Date().toISOString(),
-  },
-  {
-    code: "ccl",
-    name: "Contado con Liqui",
-    buy: 1090,
-    sell: 1105,
-    variation: 1.15,
-    timestamp: new Date().toISOString(),
-  },
-  {
-    code: "crypto",
-    name: "Cripto",
-    buy: 1135,
-    sell: 1145,
-    variation: 0.0,
-    timestamp: new Date().toISOString(),
-  },
-  {
-    code: "tarjeta",
-    name: "Tarjeta",
-    buy: 1350,
-    sell: 1400,
-    variation: 0.05,
-    timestamp: new Date().toISOString(),
-  },
-];
+import { DolarService } from "@/services/dolar";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -75,12 +25,23 @@ const itemVariants: Variants = {
 };
 
 export const CurrencyDashboard = () => {
+  const [currencies, setCurrencies] = useState<Currency[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate network latency
-    const timer = setTimeout(() => setLoading(false), 1500);
-    return () => clearTimeout(timer);
+    const fetchData = async () => {
+      try {
+        const data = await DolarService.getAll();
+        setCurrencies(data);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+    // Auto-refresh every 60 seconds
+    const interval = setInterval(fetchData, 60000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -116,7 +77,7 @@ export const CurrencyDashboard = () => {
           ? Array.from({ length: 6 }).map((_, i) => (
               <GlassCard key={i} className="h-48 w-full animate-pulse" />
             ))
-          : MOCK_DATA.map((curr) => (
+          : currencies.map((curr) => (
               <motion.div key={curr.code} variants={itemVariants}>
                 <CurrencyCard currency={curr} />
               </motion.div>
