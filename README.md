@@ -4,6 +4,14 @@
 
 Real-time Venezuelan exchange rate dashboard with glassmorphism design system.
 
+<!-- CTAs -->
+<p align="center">
+  <a href="https://github.com/LuisSambrano/dolar-api/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/dolar-api?style=flat-square" alt="Stars"/></a>
+  <a href="https://github.com/LuisSambrano/dolar-api/network/members"><img src="https://img.shields.io/github/forks/LuisSambrano/dolar-api?style=flat-square" alt="Forks"/></a>
+  <a href="https://github.com/LuisSambrano/dolar-api/issues"><img src="https://img.shields.io/github/issues/LuisSambrano/dolar-api?style=flat-square" alt="Issues"/></a>
+  <a href="https://github.com/LuisSambrano/dolar-api/blob/main/LICENSE"><img src="https://img.shields.io/github/license/LuisSambrano/dolar-api?style=flat-square" alt="License"/></a>
+</p>
+
 ## Overview
 
 This application provides a visual interface for tracking Venezuelan currency exchange rates in real-time. It connects to the DolarAPI service to display current rates for multiple currency pairs, including parallel market rates (dólar paralelo) and official exchange rates.
