@@ -9,8 +9,13 @@ Real-time Venezuelan exchange rate dashboard with glassmorphism design system.
   <a href="https://github.com/LuisSambrano/dolar-api/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/dolar-api?style=flat-square" alt="Stars"/></a>
   <a href="https://github.com/LuisSambrano/dolar-api/network/members"><img src="https://img.shields.io/github/forks/LuisSambrano/dolar-api?style=flat-square" alt="Forks"/></a>
   <a href="https://github.com/LuisSambrano/dolar-api/issues"><img src="https://img.shields.io/github/issues/LuisSambrano/dolar-api?style=flat-square" alt="Issues"/></a>
-  <a href="https://github.com/LuisSambrano/dolar-api/blob/main/LICENSE"><img src="https://img.shields.io/github/license/LuisSambrano/dolar-api?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/LuisSambrano/dolar-api/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-BSL_1.1-blue?style=flat-square" alt="License"/></a>
 </p>
+
+> [!IMPORTANT]
+> **License**: This project is licensed under the [Business Source License 1.1](LICENSE).
+> You may view and study the source code for educational purposes, but **commercial use requires a separate license**.
+> See [LICENSE](LICENSE) for full terms.
 
 ## Overview
 

@@ -12,6 +12,11 @@ Dashboard de taxas de câmbio venezuelanas em tempo real com sistema de design g
   <a href="https://github.com/LuisSambrano/dolar-api/blob/main/LICENSE"><img src="https://img.shields.io/github/license/LuisSambrano/dolar-api?style=flat-square" alt="License"/></a>
 </p>
 
+> [!IMPORTANT]
+> **Licencia**: Este proyecto está licenciado bajo [Business Source License 1.1](LICENSE).
+> Puedes ver y estudiar el código fuente con fines educativos, pero **el uso comercial requiere una licencia separada**.
+> Ver [LICENSE](LICENSE) para términos completos.
+
 ## Visão Geral
 
 Esta aplicação fornece uma interface visual para acompanhar taxas de câmbio venezuelanas em tempo real. Conecta-se ao serviço DolarAPI para exibir taxas atuais de múltiplos pares de moeda, incluindo taxas do mercado paralelo (dólar paralelo) e taxas oficiais.
