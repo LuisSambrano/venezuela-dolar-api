@@ -204,6 +204,17 @@ Ejemplo: `feat(dashboard): agregar gráfico de tasas históricas`
 
 Licencia MIT - Ver [LICENSE](LICENSE) para detalles.
 
+## 🔬 Investigación y Registro de Decisiones
+
+Este sistema de visualización sigue el protocolo **Research-First**.
+
+| Documento                                     | Propósito                                                   |
+| --------------------------------------------- | ----------------------------------------------------------- |
+| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Decisiones de Arquitectura y UX (Glassmorphism, Zero-Shift) |
+| [prompts/](./research/prompts/)               | Tracking de investigación de optimización                   |
+
+> 💡 **Para IAs**: Lee `KEY_FINDINGS.md` para entender la racional detrás de la técnica "Solid Glass".
+
 ## Enlaces
 
 - **Repositorio**: [github.com/LuisSambrano/dolar-api](https://github.com/LuisSambrano/dolar-api)

@@ -217,6 +217,17 @@ Example: `feat(dashboard): add historical rate chart`
 
 MIT License - See [LICENSE](LICENSE) for details.
 
+## 🔬 Research & Decision Log
+
+This visualization system follows the **Research-First** protocol.
+
+| Document                                      | Purpose                                                  |
+| --------------------------------------------- | -------------------------------------------------------- |
+| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Architectural & UX decisions (Glassmorphism, Zero-Shift) |
+| [prompts/](./research/prompts/)               | Optimization research tracking                           |
+
+> 💡 **For AIs**: Read `KEY_FINDINGS.md` to understand the rationale behind the "Solid Glass" technique.
+
 ## Links
 
 - **Repository**: [github.com/LuisSambrano/dolar-api](https://github.com/LuisSambrano/dolar-api)

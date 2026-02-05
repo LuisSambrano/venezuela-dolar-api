@@ -118,6 +118,17 @@ Contribuições são bem-vindas. Por favor siga estas diretrizes:
 
 Licença MIT - Veja [LICENSE](LICENSE) para detalhes.
 
+## 🔬 Pesquisa e Registro de Decisões
+
+Este sistema de visualização segue o protocolo **Research-First**.
+
+| Documento                                     | Propósito                                                |
+| --------------------------------------------- | -------------------------------------------------------- |
+| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Decisões de Arquitetura e UX (Glassmorphism, Zero-Shift) |
+| [prompts/](./research/prompts/)               | Rastreamento de pesquisa de otimização                   |
+
+> 💡 **Para IAs**: Leia `KEY_FINDINGS.md` para entender o racional por trás da técnica "Solid Glass".
+
 ## Links
 
 - **Repositório**: [github.com/LuisSambrano/dolar-api](https://github.com/LuisSambrano/dolar-api)
