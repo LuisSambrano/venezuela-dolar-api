@@ -127,7 +127,7 @@ Este sistema de visualização segue o protocolo **Research-First**.
 | [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Decisões de Arquitetura e UX (Glassmorphism, Zero-Shift) |
 | [prompts/](./research/prompts/)               | Rastreamento de pesquisa de otimização                   |
 
-> 💡 **Para IAs**: Leia `KEY_FINDINGS.md` para entender o racional por trás da técnica "Solid Glass".
+> **Decisões de Design**: Leia `KEY_FINDINGS.md` para entender o racional por trás da técnica "Solid Glass".
 
 ## Links
 
