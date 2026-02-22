@@ -1,140 +1,97 @@
-[English](./README.md) | [Español](./README.es.md) | [Português](./README.pt.md)
-
 # Dolar API Dashboard
 
-Dashboard de taxas de câmbio venezuelanas em tempo real com sistema de design glassmorphism.
+[🇺🇸 English](README.md) | [🇪🇸 Español](README.es.md)
 
-<!-- CTAs -->
 <p align="center">
-  <a href="https://github.com/LuisSambrano/dolar-api/stargazers"><img src="https://img.shields.io/github/stars/LuisSambrano/dolar-api?style=flat-square" alt="Stars"/></a>
-  <a href="https://github.com/LuisSambrano/dolar-api/network/members"><img src="https://img.shields.io/github/forks/LuisSambrano/dolar-api?style=flat-square" alt="Forks"/></a>
-  <a href="https://github.com/LuisSambrano/dolar-api/issues"><img src="https://img.shields.io/github/issues/LuisSambrano/dolar-api?style=flat-square" alt="Issues"/></a>
-  <a href="https://github.com/LuisSambrano/dolar-api/blob/main/LICENSE"><img src="https://img.shields.io/github/license/LuisSambrano/dolar-api?style=flat-square" alt="License"/></a>
+  <img src="https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-Bundler-646CFF?style=for-the-badge&logo=vite" alt="Vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-Styling-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/License-BSL_1.1-blue?style=for-the-badge" alt="License" />
 </p>
 
-> [!IMPORTANT]
-> **Licencia**: Este proyecto está licenciado bajo [Business Source License 1.1](LICENSE).
-> Puedes ver y estudiar el código fuente con fines educativos, pero **el uso comercial requiere una licencia separada**.
-> Ver [LICENSE](LICENSE) para términos completos.
+## 🏛️ Resumo do Projeto
 
-## Visão Geral
-
-Esta aplicação fornece uma interface visual para acompanhar taxas de câmbio venezuelanas em tempo real. Conecta-se ao serviço DolarAPI para exibir taxas atuais de múltiplos pares de moeda, incluindo taxas do mercado paralelo (dólar paralelo) e taxas oficiais.
-
-O dashboard implementa um sistema de design glassmorphism otimizado para performance em displays de alta resolução. Em vez de usar filtros de backdrop blur padrão que podem causar quedas de frame em telas retina, a interface usa uma abordagem "solid glass" com texturas de ruído e iluminação interna para criar profundidade sem comprometer a performance.
-
-Construído com React 19 e Vite, a aplicação prioriza tempos de carregamento rápidos e interações suaves através de atenção cuidadosa à física de animação e estabilidade de layout.
-
-## Características
-
-### Dados em Tempo Real
-
-- **Taxas de Câmbio ao Vivo**: Auto-refresh a cada 60 segundos
-- **Múltiplos Pares de Moeda**: Mercado paralelo, taxas oficiais e crypto
-- **Tendências Históricas**: Indicadores visuais para mudanças de taxa
-- **Zero Layout Shift**: Skeleton loaders correspondem à geometria final do componente
-
-### Sistema de Design
-
-- **Glassmorphism**: UI translúcida com profundidade e hierarquia
-- **Modo Escuro**: Paleta de alto contraste baseada em `#050505`
-- **Física Spring**: Animações Framer Motion com stiffness: 300
-- **Texturas de Ruído**: Grain sutil (opacity: 0.05) para textura como papel
-- **Otimizado para Performance**: Sem backdrop blur para prevenir throttling térmico
-
-### Experiência do Usuário
-
-- **Magnetic Lift**: Componentes respondem ao hover antes do clique
-- **Feedback Tátil**: Micro-interações visuais para todas as ações
-- **Responsivo**: Adapta-se a todos os tamanhos de tela
-- **Acessível**: HTML semântico e labels ARIA
-
-## Stack Tecnológico
-
-![React](https://img.shields.io/badge/React_19-61DAFB?style=flat&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwind-css&logoColor=white)
-
-**Core**:
-
-- [React 19](https://react.dev/) - Biblioteca de componentes UI
-- [TypeScript](https://www.typescriptlang.org/) - Desenvolvimento type-safe
-- [Vite](https://vitejs.dev/) - Build tool e dev server
-
-**Estilos**:
-
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utility-first
-- [Framer Motion](https://www.framer.com/motion/) - Biblioteca de animações
-- [Lucide React](https://lucide.dev/) - Sistema de ícones
-
-**Dados**:
-
-- [DolarAPI](https://dolarapi.com/) - API de taxas de câmbio venezuelanas
-
-## Primeiros Passos
-
-### Pré-requisitos
-
-- Node.js 18 ou superior
-- Gerenciador de pacotes npm
-
-### Instalação
-
-1. **Clonar o repositório**:
-
-```bash
-git clone https://github.com/LuisSambrano/dolar-api.git
-cd dolar-api
-```
-
-2. **Instalar dependências**:
-
-```bash
-npm install
-```
-
-3. **Executar servidor de desenvolvimento**:
-
-```bash
-npm run dev
-```
-
-4. **Abrir a aplicação**:
-
-Navegue para [http://localhost:5173](http://localhost:5173) no seu navegador.
-
-## Contribuir
-
-Contribuições são bem-vindas. Por favor siga estas diretrizes:
-
-1. Faça fork do repositório
-2. Crie uma branch de feature: `git checkout -b feature/descricao`
-3. Faça suas alterações com commits claros e atômicos
-4. Push para seu fork: `git push origin feature/descricao`
-5. Envie um pull request
-
-## Licença
-
-Licença MIT - Veja [LICENSE](LICENSE) para detalhes.
-
-## 🔬 Pesquisa e Registro de Decisões
-
-Este sistema de visualização segue o protocolo **Research-First**.
-
-| Documento                                     | Propósito                                                |
-| --------------------------------------------- | -------------------------------------------------------- |
-| [KEY_FINDINGS.md](./research/KEY_FINDINGS.md) | Decisões de Arquitetura e UX (Glassmorphism, Zero-Shift) |
-| [prompts/](./research/prompts/)               | Rastreamento de pesquisa de otimização                   |
-
-> **Decisões de Design**: Leia `KEY_FINDINGS.md` para entender o racional por trás da técnica "Solid Glass".
-
-## Links
-
-- **Repositório**: [github.com/LuisSambrano/dolar-api](https://github.com/LuisSambrano/dolar-api)
-- **Autor**: [Luis Sambrano](https://github.com/LuisSambrano)
-- **Documentação API**: [dolarapi.com](https://dolarapi.com/)
+Este repositório contém o código-fonte de um painel de taxas de câmbio em tempo real. Construído com **React 19** e **Vite**, o aplicativo consome APIs públicas para exibir métricas de diferentes pares de moedas. A arquitetura é otimizada para reduzir a sobrecarga de renderização e garantir estabilidade de layout, fornecendo uma camada eficiente de visualização de fluxo contínuo de dados.
 
 ---
 
-[English](./README.md) | [Español](./README.es.md) | **Português**
+## ⚙️ Principais Recursos Técnicos
+
+### 1. Sincronização de Dados em Tempo Real
+
+Implementação de mecanismos de polling para consumir streams JSON a partir da DolarAPI. Inclui estratégias de cache para minimizar a saturação da rede enquanto mantém métricas localizadas e atualizadas para diversas fontes de câmbio (paralelo, oficial, criptomoedas).
+
+### 2. Otimização de Renderização
+
+Projetado para evitar restrições na fase de "Commit" do React. A interface aproveita estratégias de aceleração por hardware CSS (`transform-gpu`) no lugar de filtros complexos na GPU (como blur de fundo), prevenindo o estrangulamento térmico frequente em telas de retina de alta resolução.
+
+### 3. Mitigação do Cumulative Layout Shift (CLS)
+
+Engenharia projetada para _Zero Layout Shift_ através do carregamento via "Skeleton Loaders" de geometria exata, certificando que a árvore do DOM não sofra mutações estruturais durante o ciclo da rede neural.
+
+---
+
+## 🏗️ Visão Geral da Arquitetura
+
+```text
+dolar-api/
+├── src/
+│   ├── components/
+│   │   ├── ui/                 # Componentes React reutilizáveis genéricos
+│   │   └── CurrencyDashboard/  # Componente principal de domínio do negócio
+│   ├── services/
+│   │   └── dolarService.ts    # Cliente de transporte API (Rede)
+│   ├── types/
+│   │   └── currency.ts        # Tipagem estrita de TypeScript para os DTOs
+│   ├── App.tsx                # Aplicação raíz
+│   └── main.tsx               # Ponto de entrada e renderização para o React Server
+```
+
+**Stack Tecnológico Enterprise:**
+
+- **Framework:** React 19 (Client-Side Rendering)
+- **Vite:** Ferramenta de Build Rápida (HMR)
+- **Estilos:** Tailwind CSS, Framer Motion
+- **Motor:** TypeScript (Modo Estrito)
+
+---
+
+## ⚙️ Instalação e Desenvolvimento
+
+Certifique-se de ter o `Node.js 18+` instalado.
+
+1. **Clonar o repositório:**
+
+   ```bash
+   git clone https://github.com/LuisSambrano/dolar-api.git
+   ```
+
+2. **Instalar dependências:**
+
+   ```bash
+   cd dolar-api
+   npm install
+   ```
+
+3. **Executar o servidor local de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🎨 Padrões de Código
+
+Este repositório exige padrões de engenharia estritos:
+
+1. `npm run lint` deve resultar em zero erros ou warnings antes do commit.
+2. `tsc --noEmit` deve aprovar todo o pacote com tipagem imutável.
+3. Não utilize interações inseguras ou dinâmicas como tipo de `any`; faça uso prudente de `unknown` emparelhado com asserções estritas (Type Guards).
+4. Siga as orientações do "Conventional Commits" ao longo de sua participação.
+
+---
+
+## 📄 Licença e Contribuição
+
+Este projeto é sub-licenciado pelos termos da [Business Source License 1.1](LICENSE). O código poderá ser acessado e inspecionado para viés primário em ensino e educação. Aplicação de exploração comercial irá necessitar anuência individual por licença direta.
